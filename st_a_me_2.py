@@ -80,8 +80,8 @@ best_student.evaluated(cool_lectur, 'Java', 10)
 
 
 # проверочные принты
-print(best_student.grades)
-print(cool_lectur.courses_attached)
-print(cool_review.courses_attached)
-print('Оценки студента', best_student.courses_in_progress)
+print('Оценки студента', best_student.grades)
+print('Лектор', cool_lectur.courses_attached)
+print('Ревьювер', cool_review.courses_attached)
+print('Изучаемые курсы', best_student.courses_in_progress)
 print('Оценки лектора', cool_lectur.grades)
