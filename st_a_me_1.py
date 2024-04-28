@@ -24,14 +24,21 @@ class Reviewer(Mentor):
     def __init__(self, name, surname):
         super().__init__(name, surname)  # задание 1 наследование
 
-    best_student = Student('Ruoy', 'Eman', 'your_gender')
-    best_student.courses_in_progress += ['Python']
 
-    cool_mentor = Lecturer('Some', 'Buddy', 'man')
-    cool_mentor.courses_attached += ['Python']
+# создание объектов класса
+best_student = Student('Ruoy', 'Eman', 'your_gender')
+best_student.courses_in_progress += ['Python']
+best_student.courses_in_progress += ['C++']
 
-    # cool_mentor.rate_hw(best_student, 'Python', 10)
-    # cool_mentor.rate_hw(best_student, 'Python', 10)
-    # cool_mentor.rate_hw(best_student, 'Python', 10)
-    #
-    # print(best_student.grades)
+cool_lectur = Lecturer('Some', 'Buddy')
+cool_lectur.courses_attached += ['Python']
+cool_lectur.courses_attached += ['Java']
+
+cool_review = Reviewer('Wasija', 'Bugldy')
+cool_review.courses_attached += ['Python']
+cool_review.courses_attached += ['C++']
+
+# проверочные принты
+# print(cool_lectur.courses_attached)
+# print(cool_review.courses_attached)
+# print('students', best_student.courses_in_progress)
